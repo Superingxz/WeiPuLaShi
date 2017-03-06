@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_stock_num"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.xolo.weipulashi.ui.activity.JingXiaoShang.JxsStockNumActivity">
+
+    <com.xolo.weipulashi.ui.view.TitleView
+        android:id="@+id/mTitleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtitle="产品库存"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_Warehouse"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@mipmap/arrow_blow"
+        android:hint="请选择仓库"
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_store"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:hint="机构名称"
+        />
+    <EditText
+        android:id="@+id/et_produce_name"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:hint="产品名称"
+        />
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

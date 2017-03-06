@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_query_input"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.xolo.weipulashi.ui.activity.Store.QueryInputActivity">
+
+    <com.xolo.weipulashi.ui.view.TitleView
+        android:id="@+id/mTitleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtitle="产品入库记录"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <TextView
+            style="@style/et_darkblue_bg"
+            android:id="@+id/tv_start_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="开始时间"
+             />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            style="@style/et_darkblue_bg"
+            android:id="@+id/tv_end_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="结束时间"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tv_order"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:hint="入库单号"
+        />
+
+    <EditText
+        android:id="@+id/et_man"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="开单人"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_state"
+        style="@style/et_darkblue_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="8dp"
+        android:hint="单据状态"
+        android:drawableRight="@mipmap/arrow_blow"
+        />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

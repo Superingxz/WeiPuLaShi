@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    >
+
+    <com.xolo.weipulashi.ui.view.ZoomImageVIew
+        android:background="@color/white"
+        android:id="@+id/iv_certificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:layout_margin="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/close_certificate"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium"
+            android:background="@drawable/shape_round_blue"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_toRightOf="@id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:visibility="gone"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="机构名称:"
+                android:textColor="@color/textSeacond"
+                android:textSize="@dimen/normal"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_store"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/normal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品名称:"
+                android:textColor="@color/textSeacond"
+                android:textSize="@dimen/normal"
+                />
+            <TextView
+                android:id="@+id/tv_ProductName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/normal"
+                />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_below="@id/ll_1"
+            android:layout_toRightOf="@id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品编码:"
+                android:textColor="@color/textSeacond"
+                android:textSize="@dimen/normal"
+                android:id="@+id/textView2" />
+
+            <TextView
+                    android:id="@+id/tv_bianma"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/normal"
+                    />
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="箱规格:"
+                    android:textColor="@color/textSeacond"
+                    android:textSize="@dimen/normal"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_guige"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.12"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/normal"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_2"
+            android:layout_toRightOf="@id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存数:"
+                    android:textColor="@color/textSeacond"
+                    android:textSize="@dimen/normal"
+                    />
+
+            <TextView
+                android:id="@+id/tv_gqty"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/normal"
+                />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="箱数:"
+                    android:textColor="@color/textSeacond"
+                    android:textSize="@dimen/normal"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_xqty"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.95"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal"
+                    />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textSeacond"
+        />
+
+</LinearLayout>

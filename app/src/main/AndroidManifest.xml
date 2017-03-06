@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xolo.weipulashi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".base.WplsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 登录 -->
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".zxing.camera.CameraActivityCapture" />
+
+        <!-- 索源 -->
+        <activity android:name=".ui.activity.SuoYuanActivity" />
+        <!-- 产品签收 -->
+        <activity
+            android:name=".ui.activity.ProduceSignActivity"
+            android:screenOrientation="portrait" />
+        <!-- 产品签收详情 -->
+        <activity
+            android:name=".ui.activity.SignInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 经销商start -->
+        <!-- 经销商首页 -->
+        <activity
+            android:name=".ui.activity.JingXiaoShang.JxsMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 销售出库扫码 -->
+        <activity
+            android:name=".ui.activity.JingXiaoShang.JsOutputScanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 销售出库明细查询 -->
+        <activity android:name=".ui.activity.JingXiaoShang.QueryOutActivity" />
+        <!-- 销售出库明细详情 -->
+        <activity android:name=".ui.activity.JingXiaoShang.XsOutDetailActivity" />
+        <!-- 门店退货明细查询 -->
+        <activity android:name=".ui.activity.JingXiaoShang.QueryReturnActivity" />
+        <!-- 门店退货明细详情 -->
+        <activity android:name=".ui.activity.JingXiaoShang.StroeReturnDetailActivity" />
+        <!-- 经销商产品库存 -->
+        <activity android:name=".ui.activity.JingXiaoShang.JxsStockNumActivity" />
+        <!-- 退货扫码 -->
+        <activity android:name=".ui.activity.JingXiaoShang.ReturnScanActivity" />
+        <!-- 经销商end -->
+
+
+        <!-- 门店start -->
+        <!-- 门店首页 -->
+        <activity android:name=".ui.activity.Store.StroeMainActivity" />
+        <!-- 门店库存 -->
+        <activity android:name=".ui.activity.Store.MdKuCunActivity" />
+        <!-- 协助会员注册 -->
+        <activity android:name=".ui.activity.Store.MdRegisteredActivity" />
+        <!-- 协助会员积分 -->
+        <activity android:name=".ui.activity.Store.MdXzJfActivity" />
+        <!-- 本店会员 -->
+        <activity android:name=".ui.activity.Store.MdMembersActivity" />
+        <!-- 门店协助兑换 -->
+        <activity android:name=".ui.activity.Store.MdXzDhActivity" />
+        <!-- 入库查询 -->
+        <activity android:name=".ui.activity.Store.QueryInputActivity" />
+        <!-- 入库查询详情 -->
+        <activity android:name=".ui.activity.Store.InputInfoActivity" />
+        <!-- 协助会员兑换记录 -->
+        <activity android:name=".ui.activity.Store.QueryPrizeActivity" />
+        <!-- 会员兑换记录详情 -->
+        <activity android:name=".ui.activity.Store.QueryPrizeInfoActivity" />
+        <!-- 防窜货 -->
+        <activity android:name=".ui.activity.Store.TrackInfoActivity" />
+        <!-- 门店会员详情 -->
+        <activity android:name=".ui.activity.Store.MdMembersInfoActivity" />
+        <!-- 添加收货地址 -->
+        <activity android:name=".ui.activity.Store.AddAddressActivity" />
+        <!--管理收货地址-->
+        <activity android:name=".ui.activity.AddressManagerActivity"/>
+        <!-- 门店end -->
+
+        <service android:name=".service.UpdateService" />
+
+    </application>
+
+</manifest>
